@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "special_hours",
+  "info": {
+    "singularName": "special-hour",
+    "pluralName": "special-hours",
+    "displayName": "Special Hours",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "isActive": {
+      "type": "boolean"
+    },
+    "message": {
+      "type": "string",
+      "required": true
+    },
+    "startDate": {
+      "type": "datetime"
+    },
+    "endDate": {
+      "type": "datetime"
+    }
+  }
+}
