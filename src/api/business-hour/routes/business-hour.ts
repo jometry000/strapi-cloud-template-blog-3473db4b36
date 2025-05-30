@@ -1,7 +1,20 @@
-/**
- * business-hour router
- */
-
-import { factories } from '@strapi/strapi';
-
-export default factories.createCoreRouter('api::business-hour.business-hour');
+export default {
+  routes: [
+    {
+      method: 'GET',
+      path: '/business-hours',
+      handler: 'business-hour.find',
+      config: {
+        auth: false,
+      },
+    },
+    {
+      method: 'GET',
+      path: '/business-hours/:id',
+      handler: 'business-hour.findOne',
+      config: {
+        auth: false,
+      },
+    },
+  ],
+};
